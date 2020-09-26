@@ -35,7 +35,7 @@ query writingAll {
         excerpt(format: PLAIN)
         frontmatter {
           title
-          date(fromNow: true)
+          date
           category
           tags
         }

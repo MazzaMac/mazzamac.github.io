@@ -22,12 +22,12 @@ export default function Sidebar({ currentPath, children }) {
       <nav style={{ margin: '0px auto', marginBottom: "1rem", display: 'flex', flexDirection: 'column', width: '100%', maxWidth: '960px', alignItems: 'flex-start', fontSize: '1.4rem', lineHeight: '1.8rem', fontFamily: 'Forum' }} >
 
 
-              <li className={currentPath.includes("blog") ? "current" : ""}><Link to="/blog">Blog</Link></li>
-              <li className={currentPath.includes("writing") ? "current" : ""}><Link to="/writing">Writing</Link></li>
-              <li className={currentPath.includes("art") ? "current" : ""}><Link to="/art">Art</Link></li>
-              <li className={currentPath.includes("about") ? "current" : ""}><Link to="/about">About</Link></li>
-              <li className={currentPath.includes("shop") ? "current" : ""}><Link to="/shop">Shop</Link></li>
-              <li className={currentPath.includes("contact") ? "current" : ""}><Link to="/contact">Contact</Link></li>
+              <li className={doesThisUrlContain("blog") ? "current" : ""}><Link to="/blog">Blog</Link></li>
+              <li className={doesThisUrlContain("writing") ? "current" : ""}><Link to="/writing">Writing</Link></li>
+              <li className={doesThisUrlContain("art") ? "current" : ""}><Link to="/art">Art</Link></li>
+              <li className={doesThisUrlContain("about") ? "current" : ""}><Link to="/about">About</Link></li>
+              <li className={doesThisUrlContain("shop") ? "current" : ""}><Link to="/shop">Shop</Link></li>
+              <li className={doesThisUrlContain("contact") ? "current" : ""}><Link to="/contact">Contact</Link></li>
 
         </nav>
     )

@@ -29,7 +29,7 @@ query imagesAll {
         excerpt(format: PLAIN)
         frontmatter {
           title
-          date(fromNow: true)
+          date
           category
           image
           link

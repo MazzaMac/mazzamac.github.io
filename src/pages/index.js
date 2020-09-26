@@ -45,7 +45,7 @@ query getPostExcerpts {
         excerpt(format: PLAIN)
         frontmatter {
           title
-          date(fromNow: true)
+          date
           category
           tags
           image

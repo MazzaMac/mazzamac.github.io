@@ -18,20 +18,17 @@ module.exports = {
       options: {
         name: `instas`,
         path: `${__dirname}/src/instas`,
-      },
-      {
+      }},{
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `poems`,
           path: `${__dirname}/src/poems`,
-        },
-  },{
+      }},{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,
-      },
-    },{
+      }},{
     resolve: `gatsby-transformer-remark`,
     options: {
       // CommonMark mode (default: true)

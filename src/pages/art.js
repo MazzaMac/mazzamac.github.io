@@ -34,7 +34,7 @@ query artAll {
         id
         frontmatter {
           title
-          date(fromNow: true)
+          date
           category
           image
           link
