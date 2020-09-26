@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Marianne MacRae dot co dot uk`,
-    description: `Marianne Macrae's website`,
+    title: `Marianne MacRae`,
+    description: `Portfolio and site for Edinburgh based Poet and Illustrator`,
     author: `@MarianneMacRae`,
   },
   plugins: [
