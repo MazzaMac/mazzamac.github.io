@@ -2,13 +2,13 @@ import React from 'react';
 import ArtWall from '../components/artwall';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 function ShopPage({data, location}){
-    const url = location.href ? location.href : '';
+    const { siteURL } = useSiteMetadata();
 
     return (
-      <Layout
-        currentPath={url}>
+    <Layout currentPath={`${siteURL}${location.pathname}`}>
         <SEO title="Shop" />
         <h1>The Shop</h1>
 

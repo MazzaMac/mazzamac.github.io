@@ -3,13 +3,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 function BlogPage({data, location}){
-    const url = location.href ? location.href : '';
+    const { siteURL } = useSiteMetadata();
 
 return (
   <Layout
-    currentPath={url}>
+    currentPath={`${siteURL}${location.pathname}`}>
     <SEO title="Blog" />
     <h1>Welcome to the Blog</h1>
 

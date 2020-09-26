@@ -3,6 +3,7 @@ module.exports = {
     title: `Marianne MacRae`,
     description: `Portfolio and site for Edinburgh based Poet and Illustrator`,
     author: `@MarianneMacRae`,
+    siteURL: 'https://mazzamac.github.io/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

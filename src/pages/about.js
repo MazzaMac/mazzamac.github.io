@@ -3,12 +3,15 @@ import React from "react";
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 function AboutPage({location}){
-    const url = location.href ? location.href : '';
+  const { siteURL } = useSiteMetadata();
+
     return (
-        <Layout currentPath={url}>
+        <Layout currentPath={`${siteURL}${location.pathname}`}>
+          <SEO title="About" />
             <h1>About Me</h1>
             <p>Hello, welcome to this, my website.</p>
 

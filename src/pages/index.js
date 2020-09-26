@@ -3,13 +3,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import Excerpt from "../components/excerpt"
+import Excerpt from "../components/excerpt";
+  import useSiteMetadata from "../hooks/use-site-metadata";
 
 function IndexPage({data, location}){
-    const url = location.href ? location.href : '';
+  const { siteURL } = useSiteMetadata();
     // console.log(data)
 return (
-  <Layout currentPath={url}>
+  <Layout currentPath={`${siteURL}${location.pathname}`}>
     <SEO title="Home" />
     <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(450px, 1fr))',
     gridGap: '1rem'}}>

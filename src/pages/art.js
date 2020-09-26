@@ -4,13 +4,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
 import ArtObject from "../components/ArtObject";
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 function ArtPage({data, location}){
-    const url = location.href ? location.href : '';
+  
+  const { siteURL } = useSiteMetadata();
 
 return (
-  <Layout
-    currentPath={url}>
+  <Layout currentPath={`${siteURL}${location.pathname}`}>
     <SEO title="Art" />
     <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
     gridGap: '1rem'}}>
