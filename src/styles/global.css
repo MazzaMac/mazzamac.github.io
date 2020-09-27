@@ -5,18 +5,20 @@ html {
 
 #grid-container {
   display: grid;
-  grid-template-areas: "main main sidebar" "main main sidebar" "footer footer footer";
+  grid-template-areas:
+  "main main sidebar"
+  "footer footer footer";
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1em;
+  /* grid-gap: 1em; */
 }
 
 #content {
-  grid-area: "main";
+  grid-area: main;
   padding: 2em;
 }
 
 #sidebar {
-  grid-area: "sidebar";
+  grid-area: sidebar;
   padding: 2em;
   /* -webkit-box-shadow: -34px -2px 96px -38px rgba(0,0,0,0.15);
   -moz-box-shadow: -34px -2px 96px -38px rgba(0,0,0,0.15);
@@ -25,7 +27,7 @@ html {
 }
 
 #footer {
-  grid-area: "footer";
+  grid-area: footer;
   min-height: 300px;
   background-color: #E9D8DD;
   padding: 2em;

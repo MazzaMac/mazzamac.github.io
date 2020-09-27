@@ -13,25 +13,14 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
-import Header from "./header"
+// import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children, currentPath }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-          siteMetadata {
-          title
-        }
-    }
-}
-`)
 
-    console.log(data)
   return (
-    <>
-        <main id="grid-container" style={{display:'flex', flexDirection: 'row'}}>
-          <section id="content" style={{flex:3}}>
+    <div id="grid-container">
+          <main id="content" >
             <Link to="/" style={{ textDecoration: `none`}}><h1 id="logo">Marianne<br />MacRae</h1></Link>
             <a href="https://instagram.com/mariannemacraeart" style={{ paddingRight: '0.5em', textDecoration: `none`}}><b>@MarianneMacraeArt</b></a>
             <a href="https://twitter.com/MarianneMacRae/" style={{ textDecoration: `none`}}><b>@MarianneMacrae</b></a>
@@ -46,13 +35,13 @@ const Layout = ({ children, currentPath }) => {
             // </Link>
             // </header>
             */}
-          <div style={{ margin: '0px auto', maxWidth: '960px', marginTop: '2rem', padding: '0px 0 1.45rem 0'}}>{children}</div>
-          </section>
-        <Sidebar currentPath={currentPath}/>
+          <div style={{ margin: '0px auto', marginTop: '2rem', padding: '0px 0 1.45rem 0'}}>{children}</div>
+          
 
         </main>
+        <Sidebar currentPath={currentPath} />
         <Footer />
-    </>
+    </div>
   )
 }
 

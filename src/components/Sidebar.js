@@ -8,7 +8,7 @@ export default function Sidebar({ currentPath, children }) {
   }
 
   const frontPageSidebar = (<>
-  <img src="https://instagram.flba1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/61499335_2268829709849127_6852742186170056704_n.jpg?_nc_ht=instagram.flba1-1.fna.fbcdn.net&_nc_ohc=U-fW_50mv5EAX8RVIR8&oh=9b6770b9af31d61285a2b7b1b5017af6&oe=5F8B72A4" />
+  <img alt="portrait of marianne macrae" src="https://instagram.flba1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/61499335_2268829709849127_6852742186170056704_n.jpg?_nc_ht=instagram.flba1-1.fna.fbcdn.net&_nc_ohc=U-fW_50mv5EAX8RVIR8&oh=9b6770b9af31d61285a2b7b1b5017af6&oe=5F8B72A4" />
 
 
 
