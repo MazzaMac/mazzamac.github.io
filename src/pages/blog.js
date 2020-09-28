@@ -3,14 +3,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
-import useSiteMetadata from "../hooks/use-site-metadata";
 
 function BlogPage({data, location}){
-    const { siteURL } = useSiteMetadata();
+    const url = location.href ? location.href : '';
 
 return (
   <Layout
-    currentPath={`${siteURL}${location.pathname}`}>
+    currentPath={url}>
     <SEO title="Blog" />
     <h1>Welcome to the Blog</h1>
 
@@ -33,7 +32,11 @@ query blogAll {
     edges {
       node {
         id
-        excerpt(format: PLAIN)
+        excerpt(
+          format: PLAIN
+          pruneLength: 600
+          truncate: true
+        )
         frontmatter {
           title
           date

@@ -26,7 +26,6 @@ export default function Sidebar({ currentPath, children }) {
               <li className={doesThisUrlContain("writing") ? "current" : ""}><Link to="/writing">Writing</Link></li>
               <li className={doesThisUrlContain("art") ? "current" : ""}><Link to="/art">Art</Link></li>
               <li className={doesThisUrlContain("about") ? "current" : ""}><Link to="/about">About</Link></li>
-              <li className={doesThisUrlContain("shop") ? "current" : ""}><Link to="/shop">Shop</Link></li>
               <li className={doesThisUrlContain("contact") ? "current" : ""}><Link to="/contact">Contact</Link></li>
 
         </nav>

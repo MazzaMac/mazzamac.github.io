@@ -3,25 +3,20 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
-import useSiteMetadata from "../hooks/use-site-metadata";
 
 function WritingPage({data, location}){
-      const { siteURL } = useSiteMetadata();
+    const url = location.href ? location.href : '';
 
 return (
   <Layout
-  currentPath={`${siteURL}${location.pathname}`}>
+    currentPath={url}>
     <SEO title="Writing" />
-    <h1>Welcome to my Writing</h1>
-
     {data.allMarkdownRemark.edges.map(({node}, index) => (
-        <Excerpt key={index} title={node.frontmatter.title}
-        date={node.frontmatter.date}
-        timeToRead={node.timeToRead}
-        text={node.excerpt}
-        slug={node.fields.slug}
-        category={node.frontmatter.category}
-        tags={node.frontmatter.tags} />
+      <article class="image-container">
+        <div class="image-description"><h2>{node.frontmatter.title}</h2>
+        <p>{node.frontmatter.publication}, {node.frontmatter.date}</p></div>
+      	<img class={node.frontmatter.category} src={node.frontmatter.image} alt="node.frontmatter.title" />
+      </article>
     ))}
 
   </Layout>)
@@ -29,16 +24,21 @@ return (
 
 export const query = graphql`
 query writingAll {
-  allMarkdownRemark(filter: {frontmatter: {category: {eq: "blog"}}}) {
+  allMarkdownRemark(filter: {frontmatter: {category: {}, _xtypename: {eq: "writing"}}}) {
     edges {
       node {
         id
         excerpt(format: PLAIN)
         frontmatter {
           title
-          date
+           date(formatString: "YYYY, MMMM")
           category
           tags
+          image
+          link
+          publication
+          product
+          etsy
         }
         timeToRead
         fields {

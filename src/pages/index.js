@@ -3,14 +3,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import Excerpt from "../components/excerpt";
-  import useSiteMetadata from "../hooks/use-site-metadata";
+import Excerpt from "../components/excerpt"
 
 function IndexPage({data, location}){
-  const { siteURL } = useSiteMetadata();
+    const url = location.href ? location.href : '';
     // console.log(data)
 return (
-  <Layout currentPath={`${siteURL}${location.pathname}`}>
+  <Layout currentPath={url}>
     <SEO title="Home" />
     <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(450px, 1fr))',
     gridGap: '1rem'}}>
@@ -39,11 +38,15 @@ return (
 
 export const query = graphql`
 query getPostExcerpts {
-  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 10) {
+  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 20) {
     edges {
       node {
         id
-        excerpt(format: PLAIN)
+        excerpt(
+          format: PLAIN
+          pruneLength: 600
+          truncate: true
+        )
         frontmatter {
           title
           date
