@@ -4,15 +4,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
 import ArtObject from "../components/ArtObject";
-import useSiteMetadata from "../hooks/use-site-metadata";
 
 function ArtPage({data, location}){
-  
-  const { siteURL } = useSiteMetadata();
+    const url = location.href ? location.href : '';
 
 return (
-  <Layout currentPath={`${siteURL}${location.pathname}`}>
+  <Layout
+    currentPath={url}>
     <SEO title="Art" />
+    <p>Some of my work is available on demand as prints, stickers and all sorts through <a href="https://www.redbubble.com/people/mariannemacrae">RedBubble
+    </a>, or you can buy limited editions directly from my etsy store (not real yet, soon though)</p>
     <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
     gridGap: '1rem'}}>
     {data.allMarkdownRemark.edges.map(({node}, index) => (

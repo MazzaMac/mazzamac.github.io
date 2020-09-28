@@ -30,10 +30,7 @@ export default function Sidebar({ currentPath, children }) {
 
         </nav>
     )
-    const artSidebar = (
-      <p>You can buy my art on <a href="https://www.redbubble.com/people/mariannemacrae">RedBubble
-      </a> or on my etsy store (not real yet, soon though)</p>
-    )
+    const artSidebar = ()
 
     const blogSidebar = (
       <>
