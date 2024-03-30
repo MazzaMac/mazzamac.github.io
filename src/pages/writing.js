@@ -3,21 +3,27 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
+import WritingEntry from "../components/writingEntry"
 
 function WritingPage({data, location}){
     const url = location.href ? location.href : '';
 
 return (
-  <Layout
-    currentPath={url}>
+  <Layout currentPath={url}>
     <SEO title="Writing" />
-    {data.allMarkdownRemark.edges.map(({node}, index) => (
-      <article class="image-container">
-        <div class="image-description"><h2>{node.frontmatter.title}</h2>
-        <p>{node.frontmatter.publication}, {node.frontmatter.date}</p></div>
-      	<img class={node.frontmatter.category} src={node.frontmatter.image} alt="node.frontmatter.title" />
-      </article>
-    ))}
+    <ul>
+    {data.allMarkdownRemark.edges.map(
+      ({node}, index) => (
+        <WritingEntry
+          title={node.frontmatter.title}
+          category={node.frontmatter.category}
+          link={node.frontmatter.link}
+          publication={node.frontmatter.publication}
+          date={node.frontmatter.date}>{node.excerpt} >
+          </WritingEntry>
+        )
+    )}
+    </ul>
 
   </Layout>)
 }
@@ -31,10 +37,17 @@ query writingAll {
         excerpt(format: PLAIN)
         frontmatter {
           title
-           date(formatString: "YYYY, MMMM")
+          publication
+          date(formatString: "YYYY, MMMM")
           category
           tags
-          image
+          image {
+            childImageSharp {
+              fluid(fit: COVER, maxWidth: 800, maxHeight: 400, cropFocus: ENTROPY) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           link
           publication
           product

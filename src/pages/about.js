@@ -10,7 +10,7 @@ function AboutPage({location}){
   const { siteURL } = useSiteMetadata();
 
     return (
-        <Layout currentPath={`${siteURL}${location.pathname}`}>
+        <Layout currentPath={`${siteURL}${location.pathname}`} layout="single" >
           <SEO title="About" />
             <h1>About Me</h1>
             <p>Hello, welcome to this, my website.</p>

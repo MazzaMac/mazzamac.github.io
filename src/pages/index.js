@@ -4,14 +4,18 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
+import { numberOfImages } from '../helpers/index.js';
+
 
 function IndexPage({data, location}){
     const url = location.href ? location.href : '';
-    // console.log(data)
+    // console.log(data)   
+
+  
 return (
-  <Layout currentPath={url}>
+  <Layout layout="front" currentPath={url}>
     <SEO title="Home" />
-    <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(450px, 1fr))',
+    <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, 100%)',
     gridGap: '1rem'}}>
     {data.allMarkdownRemark.edges.map(
         ({node}, index) => (
@@ -22,7 +26,7 @@ return (
         tags={node.frontmattags}
         slug={node.fields.slug}
         link={node.frontmatter.link}
-        image={node.frontmatter.image}
+        image={node.frontmatter.image?.childImageSharp.fluid}
         product={node.frontmatter.product}
         productLink={node.frontmatter.productLink}
         category={node.frontmatter.category}
@@ -42,17 +46,19 @@ query getPostExcerpts {
     edges {
       node {
         id
-        excerpt(
-          format: PLAIN
-          pruneLength: 600
-          truncate: true
-        )
+        excerpt(format: PLAIN, pruneLength: 600, truncate: true)
         frontmatter {
           title
           date
           category
           tags
-          image
+          image {
+            childImageSharp {
+              fluid(fit: COVER, maxWidth: 800, maxHeight: 400, cropFocus: ENTROPY) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           product
           link
           etsy
@@ -67,6 +73,8 @@ query getPostExcerpts {
     }
   }
 }
+
+
 
 `
 

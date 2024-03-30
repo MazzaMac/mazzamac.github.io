@@ -18,6 +18,20 @@ exports.onCreateNode= ({ node, getNode, actions }) => {
   }
 }
 
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = [
+    `type MarkdownRemark implements Node { frontmatter: Frontmatter }`,
+    `type Frontmatter {
+      # you may need to adapt this line depending on the node type and key
+      # that you want to create the relationship for
+      image: File @link(by: "relativePath")
+    }`
+  ]
+  createTypes(typeDefs)
+}
+
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const result = await graphql(`query {

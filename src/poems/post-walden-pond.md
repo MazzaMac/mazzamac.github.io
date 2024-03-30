@@ -1,9 +1,12 @@
 ---
 title: "Post walden pond"
 publication: "Acumen"
-date: "2020-02-11"
-link: "https://www.acumen-poetry.co.uk/marianne-macrae/?doing_wp_cron=1600890517.2200870513916015625000"
-image: "https://get.pxhere.com/photo/grass-marsh-swamp-wilderness-meadow-lake-river-pond-wildlife-stream-reflection-reservoir-waterway-wetland-bog-habitat-loch-desertweyr-salt-marsh-fen-fish-pond-natural-environment-grass-family-206078.jpg"
+publishers: "Acumen Publications"
+date: "2018-09-01"
+link: "https://acumen-poetry.co.uk/product/acumen-92-september-2018/"
+issue_number: 92
+publication_type: "journal"
+image: "poems/post-walden-pond.jpeg"
 category: "poem"
 __typename: "writing"
 snippet: ""

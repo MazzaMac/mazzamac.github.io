@@ -9,7 +9,7 @@ function BlogPage({data, location}){
 
 return (
   <Layout
-    currentPath={url}>
+    currentPath={url} layout="list">
     <SEO title="Blog" />
     <h1>Welcome to the Blog</h1>
 

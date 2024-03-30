@@ -19,7 +19,7 @@ return (
     {data.allMarkdownRemark.edges.map(({node}, index) => (
         <ArtObject key={index} title={node.frontmatter.title}
         date={node.frontmatter.date}
-        image={node.frontmatter.image}
+        image={node.frontmatter.image.childImageSharp.fixed}
         slug={node.fields.slug}
         category={node.frontmatter.category}
         tags={node.frontmatter.tags} />
@@ -30,7 +30,7 @@ return (
 
 export const query = graphql`
 query artAll {
-  allMarkdownRemark(filter: {frontmatter: {category: {eq: "art"}}}) {
+  allMarkdownRemark(filter: {frontmatter: {category: {eq: "art"}, image: {name: {ne: null}}}}) {
     edges {
       node {
         id
@@ -38,7 +38,13 @@ query artAll {
           title
           date
           category
-          image
+          image {
+            childImageSharp {
+              fixed(width: 200) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
           link
         }
         fields {
@@ -47,6 +53,7 @@ query artAll {
       }
     }
   }
-}`
+}
+`
 
 export default ArtPage

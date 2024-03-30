@@ -7,11 +7,9 @@ export default function BlogPost({data, location}) {
     const url = location.href ? location.href : '';
 
   return (
-    <Layout
-        currentPath={url}>
+    <Layout layout="single" currentPath={url}>
       <h1>{post.frontmatter.title}</h1>
       <article dangerouslySetInnerHTML={{ __html: post.html }}></article>
-
     </Layout>
   )
 }

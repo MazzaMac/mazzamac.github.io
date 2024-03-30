@@ -5,6 +5,12 @@ module.exports = {
     author: `@MarianneMacRae`,
     siteURL: 'https://mazzamac.github.io/',
   },
+  flags: { 
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    DEV_SSR: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    FAST_REFRESH: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -65,7 +71,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto Condensed', 'Forum', 'EB Garamond']
+          families: ['Roboto Condensed', 'Forum', 'EB Garamond', 'Milonga', 'IM Fell Great Primer', "Space Mono"]
         }
       }
     }
