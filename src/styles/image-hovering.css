@@ -1,0 +1,27 @@
+article.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 2em;
+}
+
+.image-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+article.image-container:hover {
+  background-color: black;
+}
+
+img.poem {
+  filter: hue-rotate(90deg) saturate(80%) sepia(10%);
+  opacity: 0.9;
+}
+
+img.poem:hover {
+  opacity: 0.4;
+  filter: hue-rotate(90deg) saturate(20%) sepia(10%);
+}

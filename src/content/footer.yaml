@@ -1,0 +1,43 @@
+- name: fiction
+  url: /writing/fiction
+
+- name: poetry
+  url: /writing/poetry
+  links:
+    - title: collection
+      url: https://mariannemacrae.co.uk/collection
+    - title: Lister Pamphlet
+      url: https://somethingelse
+
+- name: academic
+  url: /writing/academic
+  links:
+    - title: phd
+      url: phdlink
+    - title: Marianne Moore
+      url: marianneMooreLink
+
+- name: blogs
+  url: /blogs
+  links:
+    - title: Mocha The Week
+      url: https://mochatheweek.co.uk
+    - title: News
+      url: https://news.com
+    - title: Archive
+      url: https://something
+
+- name: about
+  url: /about
+
+- name: socials
+  links:
+    - title: insta @maz 
+      url: https://instagram.com
+      site: instagram
+    - title: twitta @maz
+      url: https://twitter.com/maz
+      site: twitter
+    - title: pinterest @maz
+      url: https://pinterest.com/maz
+      site: pinterest
