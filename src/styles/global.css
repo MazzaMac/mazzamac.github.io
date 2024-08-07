@@ -79,7 +79,7 @@ body {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    padding: 2em;
+    padding: 2em 7em 2em 7em;
 
 }
 
@@ -93,24 +93,43 @@ body {
 
 }
 
+footer section.links {
+    max-width: 18vw;
+}
+
+section#made-by { 
+    padding: 1em 7em 1em 7em;
+    background: #65C1CD !important; 
+}
+
 @media only screen and (max-width: 768px) {
     #outer {
         height: 100%;
         flex: 1;
         flex-direction: column;
+        padding: 2em;
     }
 
     #inner {
         columns: 2;
-        width: 100%;
-        olumn-gap: 10px;
+/*        max-width: 45%;*/
+        column-gap: 10px;
+        max-height: 600px;
+
     }
+
+    footer section.links {
+    max-width: 46%;
 }
+
 
 section#made-by { 
     padding: 1em 2em 1em 2em;
     background: #65C1CD !important; 
 }
+}
+
+
 
 footer h5 {
     color: white !important;
@@ -127,10 +146,9 @@ footer ul {
     margin: 0 0 1em 0;
 }
 
-footer section.links {
-    max-width: 18vw;
-}
 
+
+/*Typography*/
 
 h1, h2, h3, h4, h5, h6  {
     /* font-family: 'Kelly Slab', cursive !important; */
@@ -139,6 +157,12 @@ h1, h2, h3, h4, h5, h6  {
     text-transform: capitalize;
 }
 
+h2.front-page {
+    color: #41b3c2 !important;
+    font-weight: 600;
+}
+
+/* Logo Design */
 #logo { 
     display: flex;
     flex-wrap: nowrap;
@@ -148,7 +172,7 @@ h1, h2, h3, h4, h5, h6  {
 
  h1#title {
         line-height: 90%;
- line-height: 90%;
+        line-height: 90%;
         display: flex;
         flex-direction: column;
         flex-direction: column;
@@ -179,6 +203,7 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 
+/* Navigation */
 span.end {
     display: flex;
     align-self: end;
@@ -204,14 +229,26 @@ span.start {
     transform: scale(1,0.95) skew(3deg) translate(0px, -2px); 
 }
 
+/* Link Styling */
 a {
     text-decoration: none;
+    color: #41b3c2;
+    font-weight: 600;
+}
+
+p > a { border-bottom: 1px #41b3c2 dashed; }
+
+.underline-override { border-bottom: none; }
+footer * a { color: #3b3c36 } 
+footer * a:hover {}
+
+a:hover {
+/*    color: #41b3c2;*/
     color: #3b3c36;
 }
 
-a:hover {
-    color: #41b3c2;
-}
+p > a:hover { border-bottom: 1px #3b3c36 dashed; }
+
 
 li {
     /* margin-top: 1rem; */
@@ -254,4 +291,27 @@ text-align: center;
     display: inline-block;
     width: 300px;
     height: 300px;
+}
+
+.excerpt-image {
+    margin-bottom: 1em;
+}
+/* Double-color dashed line */
+
+hr.style-three {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+#snippet {
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+#snippet::before {
+  content: "\"...";
+}
+#snippet::after {
+  content: "...\"";
 }

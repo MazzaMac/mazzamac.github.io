@@ -1,43 +1,35 @@
-- name: fiction
-  url: /writing/fiction
-
 - name: poetry
-  url: /writing/poetry
+  url: /writing/
   links:
-    - title: collection
+    - title: Collection (TBA 2025)
       url: https://mariannemacrae.co.uk/collection
-    - title: Lister Pamphlet
-      url: https://somethingelse
+    - title: Joseph Lister is My New Flatmate (2018)
+      url: /joseph-lister-is-my-new-flatmate
 
 - name: academic
-  url: /writing/academic
+  url: /writing
   links:
-    - title: phd
-      url: phdlink
-    - title: Marianne Moore
-      url: marianneMooreLink
+    - title: Beyond the Other (PhD)
+      url: https://era.ed.ac.uk/bitstream/handle/1842/33081/MacRae2018.pdf?sequence=1
+    - title: Animals in Marianne Moore
+      url: https://www.cambridge.org/core/books/abs/elizabeth-bishop-in-context/animals/B52332653FBC37C1472862686D8D1120
 
 - name: blogs
   url: /blogs
   links:
     - title: Mocha The Week
       url: https://mochatheweek.co.uk
-    - title: News
-      url: https://news.com
     - title: Archive
-      url: https://something
+      url: /archive
 
 - name: about
   url: /about
 
 - name: socials
   links:
-    - title: insta @maz 
-      url: https://instagram.com
+    - title: instagram
+      url: https://www.instagram.com/mmmmarianne14
       site: instagram
-    - title: twitta @maz
-      url: https://twitter.com/maz
+    - title: twitter
+      url: https://x.com/MarianneMacRae
       site: twitter
-    - title: pinterest @maz
-      url: https://pinterest.com/maz
-      site: pinterest
