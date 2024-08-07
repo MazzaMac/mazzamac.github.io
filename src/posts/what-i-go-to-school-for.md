@@ -3,6 +3,7 @@ title: "What I Go To School For"
 date: "2015-08-23"
 category: "blog"
 tags: "ANIMALS, ART, BLOG, BUSTED, GBBO, GREAT BRITISH BAKE OFF, MCBUSTED, NARNIA, PELICAN, PHD, POETRY, RELIGION, RESEARCH, SERMON, SINUSES, TALKING ANIMALS, THE LION THE WITCH AND THE WARDROBE"
+appear_on_index: false
 ---
 Has it really been a week since last I blogged? What’s the deal with Time these days? Have the Tories made cuts to that too? I’m feeling kind of like the ol’ Prof from *The Lion, The Witch and The Wardrobe* at the moment. Or, at least I’m feeling how I imagine he feels; confused, slow and desperate to get back to Narnia.
 

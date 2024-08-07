@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import Excerpt from "../components/excerpt"
-import { numberOfImages } from '../helpers/index.js';
+// import { numberOfImages } from '../helpers/index.js';
 
 
 function IndexPage({data, location}){
@@ -19,21 +19,25 @@ return (
     gridGap: '1rem'}}>
     {data.allMarkdownRemark.edges.map(
         ({node}, index) => (
-          <Excerpt key={index} title={node.frontmatter.title}
+          <Excerpt
+            key={index}
+            title={node.frontmatter.title}
             date={node.frontmatter.date}
             timeToRead={node.timeToRead}
-        text={node.excerpt}
-        tags={node.frontmattags}
-        slug={node.fields.slug}
-        link={node.frontmatter.link}
-        image={node.frontmatter.image?.childImageSharp.fluid}
-        product={node.frontmatter.product}
-        productLink={node.frontmatter.productLink}
-        category={node.frontmatter.category}
-        etsy={node.frontmatter.etsy}
-        etsyDescription={node.frontmatter.etsyDescription}
-        redbubble={node.frontmatter.redbubble}
+            text={node.html}
+            tags={node.frontmatter.tags}
+            slug={node.fields.slug}
+            link={node.frontmatter.link}
+            image={node.frontmatter.image?.childImageSharp.fluid}
+            product={node.frontmatter.product}
+            productLink={node.frontmatter.productLink}
+            category={node.frontmatter.category}
+            etsy={node.frontmatter.etsy}
+            etsyDescription={node.frontmatter.etsyDescription}
+            redbubble={node.frontmatter.redbubble}
+            displayCategoryFlag={true}
          />
+        
     ))}
     </section>
 
@@ -42,11 +46,11 @@ return (
 
 export const query = graphql`
 query getPostExcerpts {
-  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 20) {
+  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 20, filter: {frontmatter: {appear_on_index: {ne: false}}}) {
     edges {
       node {
+        html
         id
-        excerpt(format: PLAIN, pruneLength: 600, truncate: true)
         frontmatter {
           title
           date
@@ -73,9 +77,6 @@ query getPostExcerpts {
     }
   }
 }
-
-
-
 `
 
 export default IndexPage

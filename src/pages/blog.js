@@ -20,7 +20,8 @@ return (
         text={node.excerpt}
         slug={node.fields.slug}
         category={node.frontmatter.category}
-        tags={node.frontmatter.tags} />
+        tags={node.frontmatter.tags} 
+        displayCategoryFlag={false}/>
     ))}
 
   </Layout>)

@@ -12,4 +12,5 @@ etsyDescription: ""
 redbubble: "https://www.redbubble.com/shop/ap/55834783"
 redbubbleCollection: "Famous Icons"
 redbubbleCollectionLink: "https://www.redbubble.com/people/mariannemacrae/shop?artistUserName=mariannemacrae&asc=u&collections=1652068&iaCode=all-departments&sortOrder=relevant"
+appear_on_index: false
 ---

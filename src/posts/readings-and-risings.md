@@ -3,6 +3,7 @@ title: "Reading and Risings"
 date: "2016-02-01"
 category: "blog"
 tags: "AILEEN BALLANTYNE, ALARM CLOCK, BLOG, COMEDY, EDINBURGH, JONATHAN BAY, LAUREN POPE, MARIANNE, MARIANNE MACRAE, ME3, ME3 COMEDY, METHREE, METHREE COMEDY, PHD, POETRY, POETRY GANG, PUPPY, QUIET SLAM, READING, RESEARCH, RICHARD HANRAHAN, RUSSELL JONES, SHORE POETS, SLAM, SUNRISE, WASH BAR"
+appear_on_index: false
 ---
 
 It’s been another alarmingly snappy week over here at Marianne Towers, so much so that I am apt to wonder if someone is playing a trick on me – pretty sure none of the clocks in the flat are correct, at least, none of them show the same time and often I’ll settle down for LITERALLY ONE GAME of Candy Crush and all of a sudden three hours have passed and I’m still not a published poet.

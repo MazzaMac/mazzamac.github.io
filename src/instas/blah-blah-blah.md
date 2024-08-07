@@ -6,4 +6,5 @@ image: "artwork/0032.jpg"
 tags: "outsider on-black conversation "
 product: false
 category: "art"
+appear_on_index: false
 ---

@@ -3,6 +3,7 @@ title: "The Days Tick By"
 date: "2016-01-25"
 category: "blog"
 tags: "ASHBERY, BLOG, BURNS, COMEDY, DICKINSON, EDINBURGH, LIBRARY, MARIANNE, MARIANNE MACRAE, ME3, METHREE, METHREE COMEDY, PHD, POETRY, PUPPY, RESEARCH, ROBERT BURNS, ROSSETTI, SCHUYLER, SHELLEY, THINKING WITH ANIMALS"
+appear_on_index: false
 ---
 
 Apparently it’s Monday again already, so time for another blog. As usual, I feel like I haven’t done that much this week, but when I look back through my notes I realise I’ve actually read quite a lot so that’s good!

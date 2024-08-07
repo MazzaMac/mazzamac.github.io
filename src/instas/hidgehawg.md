@@ -6,4 +6,5 @@ image: "artwork/0004.jpg"
 tags: "animal artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

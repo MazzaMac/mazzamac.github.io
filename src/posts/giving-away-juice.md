@@ -2,6 +2,7 @@
 title: "Giving Away Juice Like It's Going Outta Fashion"
 date: "2015-09-09"
 category: "blog"
+appear_on_index: false
 ---
 
 Lads, lads, lads. I missed a blog innit. Actually I missed two. I don’t think anyone besides be noticed or was disappointed by it, so I could probably get away with not drawing attention to it. HOWEVER, Catholic guilt forces me to acknowledge the error of my ways and to apologise profusely for it.

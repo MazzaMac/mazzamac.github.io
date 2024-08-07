@@ -6,4 +6,5 @@ image: "artwork/0016.jpg"
 tags: "outsider portrait music radiohead artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

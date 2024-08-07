@@ -7,4 +7,5 @@ image_location: "local"
 tags: "Bruce, Bruce Springsteen, The Boss, E Street Band, America, American Music, Rock n' Roll, Born in the USA, U.S.A., United States, Guitar, New Jersey"
 product: false
 category: "art"
+appear_on_index: false
 ---

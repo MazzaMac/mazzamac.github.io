@@ -3,6 +3,7 @@ title: "Adventures in Dog"
 date: "2015-08-15"
 category: "blog"
 tags: "AGGRESSION, ALPHA-MALE, BLOG, CHUMBO, COMEDY, DOG, DRAWING, EDINBURGH, EXERCISE, GROWLING, MARIANNE, MARIANNE MACRAE, MARIANNE MOORE, NEUTERING, PHD, POETRY, PUPPY, TALKING DOG, VET"
+appear_on_index: false
 ---
 
 Well, what a jumbled week it’s been. Very nearly decided to can writing a blog since I wasn’t sure I had that much to say, but then the ghost of Marianne Moore haunted me, waving myriad personal essays in my face and I was thusly compelled to take up my keyboard and type for my life.

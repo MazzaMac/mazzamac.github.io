@@ -5,16 +5,17 @@ publication: "decorating dissidence"
 issue: 3
 publishers: "decorating dissidence"
 ISBN: "9781999700294"
-publication_type: "journal"
+publication_type: "journals & magazines"
 editors: "Jade French, Lottie Whalen"
 date: "2019-08-31"
 link: "https://decoratingdissidence.com/2019/08/31/a-kind-of-fretful-speech/"
 image: "poems/a-kind-of-fretful-speech.jpg"
-category: "poem"
+category: "poetry"
 __typename: "writing"
 snippet: ""
 audio: ""
 video: ""
+appear_on_index: false
 ---
 
 

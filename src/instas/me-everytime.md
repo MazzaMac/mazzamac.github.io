@@ -6,4 +6,5 @@ image: "images/artwork/0046.jpg"
 tags: "crayon"
 product: false
 category: "art"
+appear_on_index: false
 ---

@@ -7,4 +7,5 @@ series: "mishmashes"
 tags: "outsider wimmelbinder pen"
 product: false
 category: "art"
+appear_on_index: false
 ---

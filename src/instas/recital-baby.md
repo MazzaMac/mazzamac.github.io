@@ -6,4 +6,5 @@ image: "artwork/0008.jpg"
 tags: "outsider recital book-cover baby on-black artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

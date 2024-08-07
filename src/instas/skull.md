@@ -7,4 +7,5 @@ image_location: "local"
 tags: "new skull"
 product: false
 category: "art"
+appear_on_index: false
 ---

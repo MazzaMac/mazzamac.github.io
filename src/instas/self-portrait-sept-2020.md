@@ -6,4 +6,5 @@ image: "artwork/0029.jpg"
 tags: "self-portrait"
 product: false
 category: "art"
+appear_on_index: false
 ---

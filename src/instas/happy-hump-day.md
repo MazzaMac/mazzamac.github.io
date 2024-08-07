@@ -6,4 +6,5 @@ image: "artwork/0017.jpg"
 tags: "outsider character artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

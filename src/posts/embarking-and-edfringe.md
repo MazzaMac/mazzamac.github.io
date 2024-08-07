@@ -3,6 +3,7 @@ title: "Embarking and EdFringe"
 date: "2015-08-07"
 category: "blog"
 tags: "ART, BLOG, COMEDY, EDFRINGE, EDFRINGE2015, EDINBURGH, FRINGE, FRINGE FESTIVAL, GREY FRIARS BOBBY, MARIANNE MACRAE, MARIANNE MOORE, ME3, ME3 COMEDY, METHREE COMEDY, PHD, POET, POETRY, PUPPY, RESEARCH"
+appear_on_index: false
 ---
 *This is my new blog. I’m hoping to update it weekly and will use it as a means of documenting my life as a poet, researcher, dog owner, comedian and artist. Doing this because I read that Marianne Moore wrote 5 personal essays a week while she was a student and while I can’t really say that these posts will be “personal essays”, I’m trying to get more general writing done on a week-to-week basis and a blog seemed like a good way to do it. Plus Mazza Moore is one of my research subjects and she was a stone cold poetry babe master, so hers isn’t a bad book from which to take a leaf. I also want to use it as a means of perseverance  – life is kinda tough right now, but hopefully recording small achievements regularly will provide much needed encouragement, even if I’m the only one who ever reads them. Okay, here’s goes!)*
 

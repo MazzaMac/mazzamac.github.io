@@ -6,4 +6,5 @@ image: "artwork/0046.jpg"
 tags: "Patti Smith"
 product: false
 category: "art"
+appear_on_index: false
 ---

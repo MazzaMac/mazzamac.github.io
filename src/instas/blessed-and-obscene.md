@@ -6,4 +6,6 @@ image: "artwork/0046.jpg"
 tags: "medieval"
 product: false
 category: "art"
+appear_on_index: false
 ---
+

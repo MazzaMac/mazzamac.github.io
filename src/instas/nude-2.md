@@ -7,4 +7,5 @@ series: "nudes"
 tags: "outsider nude life-drawing artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

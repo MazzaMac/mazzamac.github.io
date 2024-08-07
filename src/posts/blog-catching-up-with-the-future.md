@@ -2,6 +2,7 @@
 title: "Catching up with the Future"
 date: "2014-01-10"
 category: "blog"
+appear_on_index: false
 ---
 Oh, hello.
 

@@ -3,6 +3,7 @@ title: "Thoughts on Zootropolis"
 date: "2016-04-15"
 category: "blog"
 tags: "ANIMALS, ANIMALS IN FILM, BLOG, COMEDY, DISNEY, DRAWING, EDINBURGH, IT DISNEY MATTER, MARIANNE MACRAE, ME3, ME3 COMEDY, METHREE, PHD, POETRY, PUPPY, RESEARCH, RICHARD HANRAHAN, ZOOTROPOLIS"
+appear_on_index: false
 ---
 
 As Popeye might say after a very busy period of work, “Ug ug ug ug ug ug ug! I’ve been so busy lately, it has been really mad”, and I’d like to mirror those sentiments exactly as an explanation for why I haven’t written a blog in so long. I had my second year review deadline a couple of weeks ago and I also (perhaps foolishly, only time will tell) signed up to teach next year so have been doing some prep stuff for that, all the while cracking on with some hot talking animal/poetry research. Earlier in the week I was feeling a bit BLAH about the whole PhD situation, though I’m assured that’s just the general vibe of second year. Anyway, I decided to take some time way from my desk and approach my research from a slightly different angle…

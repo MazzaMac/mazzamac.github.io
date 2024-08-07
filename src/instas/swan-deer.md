@@ -7,4 +7,5 @@ image_location: "local"
 tags: "deer artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

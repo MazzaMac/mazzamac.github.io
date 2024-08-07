@@ -6,4 +6,5 @@ image: "artwork/0034.jpg"
 tags: "outsider on-black"
 product: false
 category: "art"
+appear_on_index: false
 ---

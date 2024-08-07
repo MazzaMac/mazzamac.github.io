@@ -3,6 +3,7 @@ title: "Back in Black (I'm wearing white)"
 date: "2016-01-18"
 category: "blog"
 tags: "BACK TO WORK, BLOG, BREAKS, EDINBURGH, GREY'S ANATOMY, MARIANNE, MARIANNE MACRAE, ME3, ME3 COMEDY, PHD, POETRY, PUPPY, RESEARCH"
+appear_on_index: false
 ---
 
 Really struggling to figure out how to open this blog so let’s start with a short hello: hi! How have you been? That’s great. I’m alright as well, just hacking away at my little block, trying to make something meaningful out of it.

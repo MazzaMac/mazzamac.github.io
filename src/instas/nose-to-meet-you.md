@@ -6,4 +6,5 @@ image: "artwork/0041.jpg"
 tags: "outsider on-black portrait"
 product: false
 category: "art"
+appear_on_index: false
 ---

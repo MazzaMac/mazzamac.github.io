@@ -6,4 +6,5 @@ image: "artwork/0003.jpg"
 tags: "outsider coffee character artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

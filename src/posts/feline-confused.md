@@ -3,6 +3,7 @@ title: "Feline Confused"
 date: "2016-07-11"
 category: "blog"
 tags: "ANDREW LLOYD-WEBBER, ANIMALS, BLOG, BLOGGING, CATS, MARIANNE MACRAE, MUSICAL, PHD, POETRY, RESEARCH, TALKING ANIMALS, TIM RICE, TS ELIOT"
+appear_on_index: false
 ---
 
 So, anyone else been inordinately broody since the EU referendum results rolled in to ruin our lives? Just me? Weird, I assumed recurring dreams of pregnancy and babies would be totally normal in a time of massive political crisis and uncertainty about the future…

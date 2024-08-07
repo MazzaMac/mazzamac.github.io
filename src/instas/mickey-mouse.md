@@ -11,4 +11,5 @@ etsyDescription: ""
 redbubble: ""
 redbubbleCollection: ""
 redbubbleCollectionLink: ""
+appear_on_index: false
 ---

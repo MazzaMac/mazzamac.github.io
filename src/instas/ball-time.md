@@ -6,4 +6,5 @@ image: "artwork/0023.jpg"
 tags: "outsider character on-black sport artist"
 product: false
 category: "art"
+appear_on_index: false
 ---

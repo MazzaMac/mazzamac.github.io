@@ -6,4 +6,5 @@ image: "artwork/0036.jpg"
 tags: "outsider political"
 product: false
 category: "art"
+appear_on_index: false
 ---

@@ -3,6 +3,7 @@ title: "A Week Off"
 date: "2016-04-18"
 category: "blog"
 tags: "ART, DRAWING, FUN, MARIANNE MACRAE, ODD, POSCA, POSCA PENS, RECREATION, WEIRD"
+appear_on_index: false
 ---
 
 Hola!
